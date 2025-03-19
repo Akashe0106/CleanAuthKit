@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkaShe | Şifre Sıfırlama</title>
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles/login.css"> <!-- Mevcut CSS dosyasını kullanıyoruz -->
+</head>
+<body>
+    <div class="container h-100">
+        <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="login-card">
+                    <h3 class="text-center mb-3">Şifre Sıfırlama</h3>
+
+                    <form id="resetPasswordForm">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                </div>
+                                <input type="email" class="form-control" id="resetEmail" placeholder="E-posta Adresiniz" required>
+                            </div>
+                            <small id="emailHelp" class="form-text text-muted" style="color: rgba(255,255,255,0.7) !important;">Kayıtlı e-posta adresinizi girin. Şifre sıfırlama bağlantısı gönderilecektir.</small>
+                        </div>
+
+                        <div class="alert error-message" id="resetErrorMessage"></div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Şifremi Sıfırla</button>
+                            <a href="login.html" class="not-register">Giriş Sayfasına Dön</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/reset.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

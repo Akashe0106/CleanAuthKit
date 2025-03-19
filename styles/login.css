@@ -1,0 +1,209 @@
+body {
+    background: url('../assets/wallpaper.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+.login-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.login-card h3 {
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-icons a.google {
+    color: #ffffff;
+}
+
+.social-icons a.facebook {
+    color: #ffffff;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.input-group {
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: all 0.3s ease;
+}
+
+.input-group-text {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: none !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    border-radius: 8px 0 0 8px !important;
+}
+
+.btn-password-toggle {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: none !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    border-radius: 0 8px 8px 0 !important;
+    transition: all 0.3s ease;
+}
+
+.btn-password-toggle:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+
+.btn-password-toggle:focus {
+    box-shadow: none !important;
+}
+
+.form-control {
+    background: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    height: 45px;
+}
+
+.form-control::placeholder {
+    color: rgba(255,255,255,0.7) !important;
+}
+
+.error-message {
+    display: none;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+}
+
+.input-error {
+    border-color: #dc3545 !important;
+}
+
+.input-error .input-group-text {
+    background: rgba(220, 53, 69, 0.1) !important;
+    color: #dc3545 !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    border-color: #28a745;
+    background-color: #28a745;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.custom-control-label {
+    color: rgba(255,255,255,0.9) !important;
+    font-size: 0.95rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-control-label::before {
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid rgba(255,255,255,0.3);
+    top: 0.15rem;
+}
+
+.custom-checkbox .custom-control-label::after {
+    top: 0.15rem;
+    left: -1.5rem;
+}
+
+.not-register,
+.forgot-password {
+    color: rgba(255,255,255,0.8) !important;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+.not-register:hover,
+.forgot-password:hover {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.not-register {
+    justify-content: center;
+    display: flex;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .login-card {
+        padding: 1.5rem;
+        backdrop-filter: blur(5px);
+    }
+    
+    .login-card h3 {
+        font-size: 1.4rem;
+    }
+    
+    .form-control {
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-primary {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .social-icons a {
+        font-size: 1.6rem;
+    }
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    20%, 60% {transform: translateX(-8px);}
+    40%, 80% {transform: translateX(8px);}
+}
+
+.shake {
+    animation: shake 0.4s;
+}
