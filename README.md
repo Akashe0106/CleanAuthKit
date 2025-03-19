@@ -31,3 +31,6 @@ Bu projede aşağıdaki teknolojiler kullanılmıştır:
 
 Bu proje MIT Lisansı ile lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
 
+## Stargazers over time
+[![Stargazers over time](https://starchart.cc/Akashe0106/CleanAuthKit.svg?variant=adaptive)](https://starchart.cc/Akashe0106/CleanAuthKit)
+
