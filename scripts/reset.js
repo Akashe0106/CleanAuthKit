@@ -23,7 +23,7 @@ document.getElementById('resetPasswordForm').addEventListener('submit', function
     if (error) {
         inputGroup.classList.add('input-error');
         showError(error);
-    } // Simülasyon yok (istediğin gibi)
+    }
 });
 
 function showError(message) {
